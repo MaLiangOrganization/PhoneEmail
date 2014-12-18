@@ -1,0 +1,5 @@
+D:\MaLiang\GitHub\短信、邮件网站\Code\Web\StartSolution\Start.Entity\bin\Debug\Start.Entity.dll
+D:\MaLiang\GitHub\短信、邮件网站\Code\Web\StartSolution\Start.Entity\bin\Debug\Start.Entity.pdb
+D:\MaLiang\GitHub\短信、邮件网站\Code\Web\StartSolution\Start.Entity\obj\Debug\Start.Entity.csprojResolveAssemblyReference.cache
+D:\MaLiang\GitHub\短信、邮件网站\Code\Web\StartSolution\Start.Entity\obj\Debug\Start.Entity.dll
+D:\MaLiang\GitHub\短信、邮件网站\Code\Web\StartSolution\Start.Entity\obj\Debug\Start.Entity.pdb

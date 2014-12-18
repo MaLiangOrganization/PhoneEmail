@@ -1,0 +1,5 @@
+D:\MaLiang\GitHub\短信、邮件网站\Code\Web\StartSolution\Start.IDatabase\bin\Debug\Start.IDatabase.dll
+D:\MaLiang\GitHub\短信、邮件网站\Code\Web\StartSolution\Start.IDatabase\bin\Debug\Start.IDatabase.pdb
+D:\MaLiang\GitHub\短信、邮件网站\Code\Web\StartSolution\Start.IDatabase\obj\Debug\Start.IDatabase.csprojResolveAssemblyReference.cache
+D:\MaLiang\GitHub\短信、邮件网站\Code\Web\StartSolution\Start.IDatabase\obj\Debug\Start.IDatabase.dll
+D:\MaLiang\GitHub\短信、邮件网站\Code\Web\StartSolution\Start.IDatabase\obj\Debug\Start.IDatabase.pdb

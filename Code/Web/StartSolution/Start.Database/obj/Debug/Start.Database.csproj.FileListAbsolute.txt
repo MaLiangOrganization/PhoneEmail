@@ -1,0 +1,4 @@
+D:\MaLiang\GitHub\短信、邮件网站\Code\Web\StartSolution\Start.Database\bin\Debug\Start.Database.dll
+D:\MaLiang\GitHub\短信、邮件网站\Code\Web\StartSolution\Start.Database\bin\Debug\Start.Database.pdb
+D:\MaLiang\GitHub\短信、邮件网站\Code\Web\StartSolution\Start.Database\obj\Debug\Start.Database.dll
+D:\MaLiang\GitHub\短信、邮件网站\Code\Web\StartSolution\Start.Database\obj\Debug\Start.Database.pdb
