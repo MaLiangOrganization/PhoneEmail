@@ -110,3 +110,12 @@ D:\MaLiang\GitHub\PhoneEmail\Code\Web\StartSolution\Start.Web\bin\zh-Hans\System
 D:\MaLiang\GitHub\PhoneEmail\Code\Web\StartSolution\Start.Web\obj\Debug\Start.Web.csprojResolveAssemblyReference.cache
 D:\MaLiang\GitHub\PhoneEmail\Code\Web\StartSolution\Start.Web\obj\Debug\Start.Web.dll
 D:\MaLiang\GitHub\PhoneEmail\Code\Web\StartSolution\Start.Web\obj\Debug\Start.Web.pdb
+D:\MaLiang\GitHub\PhoneEmail\Code\Web\StartSolution\Start.Web\bin\Start.Database.dll
+D:\MaLiang\GitHub\PhoneEmail\Code\Web\StartSolution\Start.Web\bin\Start.Entity.dll
+D:\MaLiang\GitHub\PhoneEmail\Code\Web\StartSolution\Start.Web\bin\Start.IDatabase.dll
+D:\MaLiang\GitHub\PhoneEmail\Code\Web\StartSolution\Start.Web\bin\Start.Database.pdb
+D:\MaLiang\GitHub\PhoneEmail\Code\Web\StartSolution\Start.Web\bin\Start.Entity.pdb
+D:\MaLiang\GitHub\PhoneEmail\Code\Web\StartSolution\Start.Web\bin\Start.IDatabase.pdb
+D:\MaLiang\GitHub\PhoneEmail\Code\Web\StartSolution\Start.Web\bin\MaLiang.Common.dll
+D:\MaLiang\GitHub\PhoneEmail\Code\Web\StartSolution\Start.Web\bin\MaLiang.Web.dll
+D:\MaLiang\GitHub\PhoneEmail\Code\Web\StartSolution\Start.Web\bin\MvcPager.dll

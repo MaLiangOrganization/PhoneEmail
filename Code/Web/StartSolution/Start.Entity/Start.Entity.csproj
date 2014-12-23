@@ -33,6 +33,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -40,8 +41,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="EmailAddressInfo.cs" />
+    <Compile Include="EmailInfo.cs" />
+    <Compile Include="EmailProfileInfo.cs" />
+    <Compile Include="EmailSendInfo.cs" />
+    <Compile Include="EnumInfo.cs" />
+    <Compile Include="FeedbackInfo.cs" />
+    <Compile Include="HelpInfo.cs" />
+    <Compile Include="MessageInfo.cs" />
+    <Compile Include="MessageSendInfo.cs" />
+    <Compile Include="PageInfo.cs" />
+    <Compile Include="PhoneAddressInfo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UsersInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

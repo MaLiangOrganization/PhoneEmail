@@ -1,17 +1,50 @@
-﻿@{
-    Layout = null;
-}
-
-<!DOCTYPE html>
-
-<html>
+﻿<!DOCTYPE html>
+@{Layout = null;}
+<html lang="zh-cn">
 <head>
-    <meta name="viewport" content="width=device-width" />
-    <title>Index</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>后台管理系统</title>
+    <link href="/Themes/Admin/bootstrap-3.3.0/CSS/bootstrap.css" rel="stylesheet"/>
 </head>
 <body>
-    <div>
-         第二次测试数据
-    </div>
+    <form  action="/Admin/UserLogin" data-ajax="true"  data-ajax-method="Post" data-ajax-begin="ajaxBegin" data-ajax-failure="ajaxFailure" data-ajax-success="ajaxSuccess">
+        <div class="container">
+            <div class="well center-block col-md-4" style="float:none;margin-top:20px; ">
+                <div class="form-group">
+                    <label>用户名</label>
+                    <input type="text" class="form-control" name="name" value="phoneemail" placeholder="请输入用户名">
+                </div>
+                <div class="form-group">
+                    <label>密码</label>
+                    <input type="password" class="form-control" name="password" value="111111" placeholder="请输入密码">
+                </div>
+                <div class="form-group">
+                    <input type="submit" class="btn btn-block btn-primary btn-lg" value="登录" />
+                    <span id="spanPrompt" class="text-warning ml"></span>     
+                </div>
+            </div>
+        </div>       
+    </form>
+    <script src="/Themes/Admin/JS/jquery-2.1.1.min.js"></script>
+    <script src="/Themes/Admin/JS/jquery.unobtrusive-ajax.min.js"></script> 
+    <script type="text/javascript">
+        //Ajax开始提交
+        function ajaxBegin(){$("#spanPrompt").html("<img src='/Themes/Admin/Images/loading.jpg' alt='Loading' />");}
+        //Ajax提交失败
+        function ajaxFailure(){$("#spanPrompt").html("操作异常");}
+        //Ajax提交完成
+        function ajaxSuccess(json){ 
+            if(json.Success == 1)
+                window.location.href = "/Admin/EmailList";
+            else
+                $("#spanPrompt").html(json.Message);
+        }
+    </script>   
 </body>
 </html>
+
+
+
+

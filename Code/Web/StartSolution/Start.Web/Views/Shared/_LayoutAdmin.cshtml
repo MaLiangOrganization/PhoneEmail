@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>后台管理系统</title>
+    <link href="/Themes/Admin/bootstrap-3.3.0/CSS/bootstrap.css" rel="stylesheet"/>
+    <link href="/Themes/Admin/bootstrap-3.3.0/CSS/bootstrapExt.css" rel="stylesheet"/>
+</head>
+<body>
+    <div class="container mt">
+        <div class="row">
+            <div class="col-xs-2 well well-sm">
+                <div class="list-group">                    
+                    @{
+                        Start.Entity.UsersInfo usersInfo = Start.Web.Common.Parameter.LoginUser();
+                        @usersInfo.Name <a class="ml" href="/Admin/Logout">退出</a>
+                       
+                    }
+                    <div class="list-group-item mt">
+                        <a  href="/Admin/EmailList">邮箱列表</a>
+                        <a class="pull-right glyphicon glyphicon-plus" href="/Admin/Email"></a>
+                    </div>
+                    <div class="list-group-item ">
+                        <a href="/Admin/PhoneList">短信列表</a>
+                        <a class="pull-right glyphicon glyphicon-plus" href="/Admin/PhoneItem"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-10">
+                @RenderBody()
+            </div>
+        </div>       
+    </div> 
+    <div class="navbar-fixed-bottom">
+        <div class="container">底部</div>
+    </div>   
+    <script src="/Themes/Admin/JS/jquery-2.1.1.min.js"></script>
+    <script src="/Themes/Admin/JS/jquery.unobtrusive-ajax.min.js"></script>
+    <script src="/Themes/Admin/JS/MvcPager.min.js"></script>
+    <script src="/Themes/Admin/bootstrap-3.3.0/js/bootstrap.js"></script>
+    @RenderSection("ScriptSection", false)
+</body>
+</html>

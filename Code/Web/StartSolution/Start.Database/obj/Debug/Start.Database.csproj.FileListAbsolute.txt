@@ -11,3 +11,12 @@ C:\Users\silence\Desktop\PhoneEmail\Code\Web\StartSolution\Start.Database\bin\De
 C:\Users\silence\Desktop\PhoneEmail\Code\Web\StartSolution\Start.Database\bin\Debug\Start.Database.pdb
 C:\Users\silence\Desktop\PhoneEmail\Code\Web\StartSolution\Start.Database\obj\Debug\Start.Database.dll
 C:\Users\silence\Desktop\PhoneEmail\Code\Web\StartSolution\Start.Database\obj\Debug\Start.Database.pdb
+D:\MaLiang\GitHub\PhoneEmail\Code\Web\StartSolution\Start.Database\obj\Debug\Start.Database.csprojResolveAssemblyReference.cache
+D:\MaLiang\GitHub\PhoneEmail\Code\Web\StartSolution\Start.Database\obj\Debug\Start.Database.dll
+D:\MaLiang\GitHub\PhoneEmail\Code\Web\StartSolution\Start.Database\bin\Debug\Start.Database.dll
+D:\MaLiang\GitHub\PhoneEmail\Code\Web\StartSolution\Start.Database\bin\Debug\Start.Database.pdb
+D:\MaLiang\GitHub\PhoneEmail\Code\Web\StartSolution\Start.Database\bin\Debug\Start.Entity.dll
+D:\MaLiang\GitHub\PhoneEmail\Code\Web\StartSolution\Start.Database\bin\Debug\Start.IDatabase.dll
+D:\MaLiang\GitHub\PhoneEmail\Code\Web\StartSolution\Start.Database\bin\Debug\Start.Entity.pdb
+D:\MaLiang\GitHub\PhoneEmail\Code\Web\StartSolution\Start.Database\bin\Debug\Start.IDatabase.pdb
+D:\MaLiang\GitHub\PhoneEmail\Code\Web\StartSolution\Start.Database\obj\Debug\Start.Database.pdb

@@ -40,7 +40,16 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="MaLiang.Common">
+      <HintPath>..\DLL\MaLiang.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="MaLiang.Web">
+      <HintPath>..\DLL\MaLiang.Web.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="MvcPager">
+      <HintPath>..\DLL\MvcPager.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
@@ -113,6 +122,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Common\AdminAuthentication.cs" />
+    <Compile Include="Common\Parameter.cs" />
     <Compile Include="Controllers\AdminController.cs" />
     <Compile Include="Controllers\WebController.cs" />
     <Compile Include="Global.asax.cs">
@@ -125,6 +136,20 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Content Include="Global.asax" />
+    <Content Include="Themes\Admin\bootstrap-3.3.0\css\bootstrap-theme.css" />
+    <Content Include="Themes\Admin\bootstrap-3.3.0\css\bootstrap-theme.min.css" />
+    <Content Include="Themes\Admin\bootstrap-3.3.0\css\bootstrap.css" />
+    <Content Include="Themes\Admin\bootstrap-3.3.0\css\bootstrap.min.css" />
+    <Content Include="Themes\Admin\bootstrap-3.3.0\css\bootstrapExt.css" />
+    <Content Include="Themes\Admin\bootstrap-3.3.0\js\bootstrap.js" />
+    <Content Include="Themes\Admin\bootstrap-3.3.0\js\bootstrap.min.js" />
+    <Content Include="Themes\Admin\bootstrap-3.3.0\js\npm.js" />
+    <Content Include="Themes\Admin\Images\loading.jpg" />
+    <Content Include="Themes\Admin\JS\jquery-2.1.1.js" />
+    <Content Include="Themes\Admin\JS\jquery-2.1.1.min.js" />
+    <Content Include="Themes\Admin\JS\jquery.unobtrusive-ajax.min.js" />
+    <Content Include="Themes\Admin\JS\MvcPager.js" />
+    <Content Include="Themes\Admin\JS\MvcPager.min.js" />
     <Content Include="Themes\Web\bootstrap\css\bootstrap-theme.css" />
     <Content Include="Themes\Web\bootstrap\css\bootstrap-theme.min.css" />
     <Content Include="Themes\Web\bootstrap\css\bootstrap.css" />
@@ -156,7 +181,7 @@
     <Content Include="Views\Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Themes\Admin\" />
+    <Content Include="Views\Admin\_ViewStart.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
@@ -184,6 +209,34 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Admin\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Start.Database\Start.Database.csproj">
+      <Project>{b201c5ae-7632-4009-8028-b822f264ac23}</Project>
+      <Name>Start.Database</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Start.Entity\Start.Entity.csproj">
+      <Project>{3ea6e50d-b8be-478c-8e7b-94e7d3defcaa}</Project>
+      <Name>Start.Entity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Start.IDatabase\Start.IDatabase.csproj">
+      <Project>{5e4af806-4fbf-41cc-9670-f2bfbf028778}</Project>
+      <Name>Start.IDatabase</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Themes\Admin\bootstrap-3.3.0\css\bootstrap-theme.css.map" />
+    <Content Include="Themes\Admin\bootstrap-3.3.0\css\bootstrap.css.map" />
+    <Content Include="Themes\Admin\bootstrap-3.3.0\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Themes\Admin\bootstrap-3.3.0\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Themes\Admin\bootstrap-3.3.0\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Themes\Admin\bootstrap-3.3.0\fonts\glyphicons-halflings-regular.woff" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Shared\_LayoutAdmin.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Admin\EmailList.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

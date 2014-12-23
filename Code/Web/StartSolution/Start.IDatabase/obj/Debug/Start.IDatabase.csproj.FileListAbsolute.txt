@@ -13,3 +13,10 @@ C:\Users\silence\Desktop\PhoneEmail\Code\Web\StartSolution\Start.IDatabase\bin\D
 C:\Users\silence\Desktop\PhoneEmail\Code\Web\StartSolution\Start.IDatabase\obj\Debug\Start.IDatabase.csprojResolveAssemblyReference.cache
 C:\Users\silence\Desktop\PhoneEmail\Code\Web\StartSolution\Start.IDatabase\obj\Debug\Start.IDatabase.dll
 C:\Users\silence\Desktop\PhoneEmail\Code\Web\StartSolution\Start.IDatabase\obj\Debug\Start.IDatabase.pdb
+D:\MaLiang\GitHub\PhoneEmail\Code\Web\StartSolution\Start.IDatabase\bin\Debug\Start.IDatabase.dll
+D:\MaLiang\GitHub\PhoneEmail\Code\Web\StartSolution\Start.IDatabase\bin\Debug\Start.IDatabase.pdb
+D:\MaLiang\GitHub\PhoneEmail\Code\Web\StartSolution\Start.IDatabase\bin\Debug\Start.Entity.dll
+D:\MaLiang\GitHub\PhoneEmail\Code\Web\StartSolution\Start.IDatabase\bin\Debug\Start.Entity.pdb
+D:\MaLiang\GitHub\PhoneEmail\Code\Web\StartSolution\Start.IDatabase\obj\Debug\Start.IDatabase.csprojResolveAssemblyReference.cache
+D:\MaLiang\GitHub\PhoneEmail\Code\Web\StartSolution\Start.IDatabase\obj\Debug\Start.IDatabase.dll
+D:\MaLiang\GitHub\PhoneEmail\Code\Web\StartSolution\Start.IDatabase\obj\Debug\Start.IDatabase.pdb

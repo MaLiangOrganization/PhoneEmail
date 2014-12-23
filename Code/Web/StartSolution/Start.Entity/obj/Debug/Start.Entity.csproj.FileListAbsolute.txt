@@ -13,3 +13,7 @@ C:\Users\silence\Desktop\PhoneEmail\Code\Web\StartSolution\Start.Entity\bin\Debu
 C:\Users\silence\Desktop\PhoneEmail\Code\Web\StartSolution\Start.Entity\obj\Debug\Start.Entity.csprojResolveAssemblyReference.cache
 C:\Users\silence\Desktop\PhoneEmail\Code\Web\StartSolution\Start.Entity\obj\Debug\Start.Entity.dll
 C:\Users\silence\Desktop\PhoneEmail\Code\Web\StartSolution\Start.Entity\obj\Debug\Start.Entity.pdb
+D:\MaLiang\GitHub\PhoneEmail\Code\Web\StartSolution\Start.Entity\obj\Debug\Start.Entity.dll
+D:\MaLiang\GitHub\PhoneEmail\Code\Web\StartSolution\Start.Entity\obj\Debug\Start.Entity.pdb
+D:\MaLiang\GitHub\PhoneEmail\Code\Web\StartSolution\Start.Entity\bin\Debug\Start.Entity.dll
+D:\MaLiang\GitHub\PhoneEmail\Code\Web\StartSolution\Start.Entity\bin\Debug\Start.Entity.pdb
