@@ -2,3 +2,12 @@ D:\MaLiang\GitHub\短信、邮件网站\Code\Web\StartSolution\Start.Database\bi
 D:\MaLiang\GitHub\短信、邮件网站\Code\Web\StartSolution\Start.Database\bin\Debug\Start.Database.pdb
 D:\MaLiang\GitHub\短信、邮件网站\Code\Web\StartSolution\Start.Database\obj\Debug\Start.Database.dll
 D:\MaLiang\GitHub\短信、邮件网站\Code\Web\StartSolution\Start.Database\obj\Debug\Start.Database.pdb
+C:\Users\lenovo\Desktop\PhoneEmail\Code\Web\StartSolution\Start.Database\bin\Debug\Start.Database.dll
+C:\Users\lenovo\Desktop\PhoneEmail\Code\Web\StartSolution\Start.Database\bin\Debug\Start.Database.pdb
+C:\Users\lenovo\Desktop\PhoneEmail\Code\Web\StartSolution\Start.Database\obj\Debug\Start.Database.dll
+C:\Users\lenovo\Desktop\PhoneEmail\Code\Web\StartSolution\Start.Database\obj\Debug\Start.Database.pdb
+C:\Users\lenovo\Desktop\PhoneEmail\Code\Web\StartSolution\Start.Database\obj\Debug\Start.Database.csprojResolveAssemblyReference.cache
+C:\Users\silence\Desktop\PhoneEmail\Code\Web\StartSolution\Start.Database\bin\Debug\Start.Database.dll
+C:\Users\silence\Desktop\PhoneEmail\Code\Web\StartSolution\Start.Database\bin\Debug\Start.Database.pdb
+C:\Users\silence\Desktop\PhoneEmail\Code\Web\StartSolution\Start.Database\obj\Debug\Start.Database.dll
+C:\Users\silence\Desktop\PhoneEmail\Code\Web\StartSolution\Start.Database\obj\Debug\Start.Database.pdb

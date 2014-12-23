@@ -29,6 +29,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -124,6 +125,27 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Content Include="Global.asax" />
+    <Content Include="Themes\Web\bootstrap\css\bootstrap-theme.css" />
+    <Content Include="Themes\Web\bootstrap\css\bootstrap-theme.min.css" />
+    <Content Include="Themes\Web\bootstrap\css\bootstrap.css" />
+    <Content Include="Themes\Web\bootstrap\css\bootstrap.min.css" />
+    <Content Include="Themes\Web\bootstrap\js\bootstrap.js" />
+    <Content Include="Themes\Web\bootstrap\js\bootstrap.min.js" />
+    <Content Include="Themes\Web\bootstrap\js\npm.js" />
+    <Content Include="Themes\Web\CSS\Index.css" />
+    <Content Include="Themes\Web\CSS\Member.css" />
+    <Content Include="Themes\Web\CSS\Web.css" />
+    <Content Include="Themes\Web\Icons\demo.css" />
+    <Content Include="Themes\Web\Icons\demo.html" />
+    <Content Include="Themes\Web\Icons\iconfont.css" />
+    <Content Include="Themes\Web\Icons\iconfont.svg" />
+    <Content Include="Themes\Web\Images\02.jpg.jpg" />
+    <Content Include="Themes\Web\Images\03.jpg.jpg" />
+    <Content Include="Themes\Web\Images\11.jpg" />
+    <Content Include="Themes\Web\Images\12.jpg" />
+    <Content Include="Themes\Web\JS\Index.js" />
+    <Content Include="Themes\Web\JS\jquery-1.7.1.min.js" />
+    <Content Include="Themes\Web\JS\jquery1-10-1.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -135,12 +157,30 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Themes\Admin\" />
-    <Folder Include="Themes\Web\" />
-    <Folder Include="Views\Shared\" />
-    <Folder Include="Views\Web\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Web\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Themes\Web\bootstrap\css\bootstrap-theme.css.map" />
+    <Content Include="Themes\Web\bootstrap\css\bootstrap.css.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Themes\Web\Icons\iconfont.eot" />
+    <Content Include="Themes\Web\Icons\iconfont.ttf" />
+    <Content Include="Themes\Web\Icons\iconfont.woff" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Web\Email.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Shared\_LayoutWeb.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Web\_ViewStart.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Admin\Index.cshtml" />

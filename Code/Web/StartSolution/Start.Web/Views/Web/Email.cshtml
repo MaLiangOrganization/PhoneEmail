@@ -1,0 +1,151 @@
+﻿    <div class="container" style="width:1170px;">
+        <div class="row-fluid">
+         <header>              
+          <nav class="navbar navbar-default" role="navigation">
+           <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/Web/Index">LOGO</a>
+            </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li><a href="/Web/Index">首&nbsp;&nbsp;&nbsp;&nbsp;页</a><div class="nav-line"></div></li>
+                <li><a href="/Web/Email">邮件群发</a><div class="nav-line"></div></li>
+                <li><a href="#">短信群发</a><div class="nav-line"></div></li>
+            </ul>
+      
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#" data-toggle="modal" data-target="#about-modal">登录</a><div class="nav-line"></div></li>
+                <li><a href="#">QQ联系</a><div class="nav-line"></div></li>
+                <li><a href="#">意见反馈</a><div class="nav-line"></div></li>
+            </ul>
+         </div><!-- /.navbar-collapse -->
+       </div><!-- /.container-fluid -->
+      </nav>
+    </header>
+            <!--header end-->                      
+            <div class="Email-content">
+                <ol class="breadcrumb">
+                    <li><a href="#" class="iconfont">&#xe61c;</a></li>
+                    <li><a href="#" class="iconfont">&#xe665;</a></li>
+                    <li class="active">Data</li>
+                </ol>
+                <form class="Emali-form">
+                <div style="width:971px; height:300px; border:1px solid #000; margin:20px auto;">
+                    <div style="width:969px; height:35px; background:#0ff; text-align: right;">
+                        <a href="#" class="btn iconfont" data-toggle="modal" data-target="#Modal-Email">添加 &#xe61a;</a>
+                    </div>
+                
+                </div>
+                <textarea name="textarea" cols="155" rows="10" wrap="soft" placeholder="请输入信息......" ></textarea>
+                <button type="button" class="btn btn-success  modal-btn" >发送</button>
+            </form>
+              
+            </div>
+            <footer id="footer">
+              <p class="pull-right"><a href="#top"> </a></p>
+              <p class="center">Company &copy;1998-2014 Silence. All Rights Reseved. </p>
+            </footer>
+
+        </div>
+        <!--row-fluid end-->
+    </div>
+    <!--container end-->
+    <!--登陆-->
+    <div class="modal fade" id="Modal-Email" tabindex="-1" role="dialog" aria-labelledby="modal-label" aria-hidden="true">
+        <div class="modal-dialog Modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header Modal-header">
+                    <button type="button" class="close" data-dismiss="modal">
+                    <span aria-hidden="true">&times;</span><span class="sr-only">关闭</span></button>
+                    <h4 class="modal-title" id="modal-label">添加邮件地址</h4>
+                  </div>
+                <div class="modal-body Modal-body">
+                    <table class="table Modal-table" id="Modal-table">
+                       <thead>
+                         <tr>
+                           <th><input type="checkbox" id="Modal-all"/><label for="Modal-all">全选</label></th>
+                           <th class="Modal-thcenter"><span style="display:inline-block; vertical-align: super;">邮箱</span></th>
+                           <th><span>删除</span><span class="btn iconfont" id="Modal-addrow">&#xe61a;</span></th>
+                             
+                         </tr>
+                       </thead>
+                       <tbody>
+                         <tr class="tr">
+                           <td><input type="checkbox" name="checkEmail" class="sss" /></td>
+                            <td>
+                             <span class="iconfont account">&#xe629;|</span><input type="email" name="email" autocomplete="off" class="inputEmail" placeholder="请输入邮件地址...">
+                             <span class="iconfont error-account Modal-Emailp" style="display:none;">&#xf0015;邮件格式错误 </span>   
+                             </td>
+                           <td>
+                               <span class="iconfont Modal-removecol btn" >&#xe637;</span>
+                           </td>
+                         </tr>
+                     
+                      </tbody>
+                     </table>
+                 </div>
+                <div class="modal-footer">
+                   <button type="button" class="btn btn-success  modal-btn" data-dismiss="modal">添加</button>
+                </div>
+         </div>
+       </div>
+    </div>
+<script type="text/javascript">
+    $(function (){
+        //全选
+        $('#Modal-all').change(function () {
+            var checkAll = this.checked;
+            $("input[name='checkEmail']").each(function () {
+                $(this).prop("checked", checkAll);
+            });
+        });
+        //添加
+        $("#Modal-addrow").click(function () {   
+            $('.tr:last').clone(true).appendTo(".Modal-table");
+        })
+        //删除
+        $('.Modal-removecol').click(function () {
+            if ($('.Modal-removecol').length > 1) {
+                $(this).parents('tr').remove();
+            }           
+        })
+        //判断是否全选
+        $("input[name='checkEmail']").click(function () {
+            var i = 0;
+            $("input[name='checkEmail']").each(function () {
+             if ($(this).prop("checked") == false) {
+                    i++;
+                    }
+               });
+            if (i == 0) {
+              $("#Modal-all").prop("checked", true);
+            }
+            else {
+                $("#Modal-all").prop("checked", false);
+            }
+        })
+        //验证邮件
+        $("input[name='email']").change(function () {
+            //手机号码var reg = /^1(3|5|7|8|9)\d{9}$/;
+           
+            var regs = /^[\w\-\.]+@@[\w\-\.]+(\.\w+)+$/;         
+            if ($(this).val()==""||regs.test($(this).val()) == true) {
+                $(this).next("span").hide();
+            }
+            else {
+                $(this).next("span").show();
+            }
+        });
+       
+    })
+</script>
+

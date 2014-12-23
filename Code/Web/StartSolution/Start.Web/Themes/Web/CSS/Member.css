@@ -1,0 +1,4 @@
+﻿@charset "utf-8";
+* { margin:0px; padding:0px;text-decoration:none !important; list-style:none;}
+#footer { margin: 20px 0px; text-align:center; background-color:#41BED2; height:50px;line-height:50px;}
+.Modal-header { background-color:#41BED2;}

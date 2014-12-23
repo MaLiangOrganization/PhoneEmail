@@ -3,3 +3,13 @@ D:\MaLiang\GitHub\短信、邮件网站\Code\Web\StartSolution\Start.Entity\bin\
 D:\MaLiang\GitHub\短信、邮件网站\Code\Web\StartSolution\Start.Entity\obj\Debug\Start.Entity.csprojResolveAssemblyReference.cache
 D:\MaLiang\GitHub\短信、邮件网站\Code\Web\StartSolution\Start.Entity\obj\Debug\Start.Entity.dll
 D:\MaLiang\GitHub\短信、邮件网站\Code\Web\StartSolution\Start.Entity\obj\Debug\Start.Entity.pdb
+C:\Users\lenovo\Desktop\PhoneEmail\Code\Web\StartSolution\Start.Entity\bin\Debug\Start.Entity.dll
+C:\Users\lenovo\Desktop\PhoneEmail\Code\Web\StartSolution\Start.Entity\bin\Debug\Start.Entity.pdb
+C:\Users\lenovo\Desktop\PhoneEmail\Code\Web\StartSolution\Start.Entity\obj\Debug\Start.Entity.dll
+C:\Users\lenovo\Desktop\PhoneEmail\Code\Web\StartSolution\Start.Entity\obj\Debug\Start.Entity.pdb
+C:\Users\lenovo\Desktop\PhoneEmail\Code\Web\StartSolution\Start.Entity\obj\Debug\Start.Entity.csprojResolveAssemblyReference.cache
+C:\Users\silence\Desktop\PhoneEmail\Code\Web\StartSolution\Start.Entity\bin\Debug\Start.Entity.dll
+C:\Users\silence\Desktop\PhoneEmail\Code\Web\StartSolution\Start.Entity\bin\Debug\Start.Entity.pdb
+C:\Users\silence\Desktop\PhoneEmail\Code\Web\StartSolution\Start.Entity\obj\Debug\Start.Entity.csprojResolveAssemblyReference.cache
+C:\Users\silence\Desktop\PhoneEmail\Code\Web\StartSolution\Start.Entity\obj\Debug\Start.Entity.dll
+C:\Users\silence\Desktop\PhoneEmail\Code\Web\StartSolution\Start.Entity\obj\Debug\Start.Entity.pdb

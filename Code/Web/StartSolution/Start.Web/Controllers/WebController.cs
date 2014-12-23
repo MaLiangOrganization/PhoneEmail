@@ -15,6 +15,10 @@ namespace Start.Web.Controllers
         {
             return View();
         }
+        public ActionResult Email()
+        {
+            return View(); 
+        }
 
     }
 }

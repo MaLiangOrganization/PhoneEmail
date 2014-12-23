@@ -3,3 +3,13 @@ D:\MaLiang\GitHub\短信、邮件网站\Code\Web\StartSolution\Start.IDatabase\b
 D:\MaLiang\GitHub\短信、邮件网站\Code\Web\StartSolution\Start.IDatabase\obj\Debug\Start.IDatabase.csprojResolveAssemblyReference.cache
 D:\MaLiang\GitHub\短信、邮件网站\Code\Web\StartSolution\Start.IDatabase\obj\Debug\Start.IDatabase.dll
 D:\MaLiang\GitHub\短信、邮件网站\Code\Web\StartSolution\Start.IDatabase\obj\Debug\Start.IDatabase.pdb
+C:\Users\lenovo\Desktop\PhoneEmail\Code\Web\StartSolution\Start.IDatabase\bin\Debug\Start.IDatabase.dll
+C:\Users\lenovo\Desktop\PhoneEmail\Code\Web\StartSolution\Start.IDatabase\bin\Debug\Start.IDatabase.pdb
+C:\Users\lenovo\Desktop\PhoneEmail\Code\Web\StartSolution\Start.IDatabase\obj\Debug\Start.IDatabase.dll
+C:\Users\lenovo\Desktop\PhoneEmail\Code\Web\StartSolution\Start.IDatabase\obj\Debug\Start.IDatabase.pdb
+C:\Users\lenovo\Desktop\PhoneEmail\Code\Web\StartSolution\Start.IDatabase\obj\Debug\Start.IDatabase.csprojResolveAssemblyReference.cache
+C:\Users\silence\Desktop\PhoneEmail\Code\Web\StartSolution\Start.IDatabase\bin\Debug\Start.IDatabase.dll
+C:\Users\silence\Desktop\PhoneEmail\Code\Web\StartSolution\Start.IDatabase\bin\Debug\Start.IDatabase.pdb
+C:\Users\silence\Desktop\PhoneEmail\Code\Web\StartSolution\Start.IDatabase\obj\Debug\Start.IDatabase.csprojResolveAssemblyReference.cache
+C:\Users\silence\Desktop\PhoneEmail\Code\Web\StartSolution\Start.IDatabase\obj\Debug\Start.IDatabase.dll
+C:\Users\silence\Desktop\PhoneEmail\Code\Web\StartSolution\Start.IDatabase\obj\Debug\Start.IDatabase.pdb
