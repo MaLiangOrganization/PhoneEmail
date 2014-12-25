@@ -20,3 +20,12 @@ D:\MaLiang\GitHub\PhoneEmail\Code\Web\StartSolution\Start.Database\bin\Debug\Sta
 D:\MaLiang\GitHub\PhoneEmail\Code\Web\StartSolution\Start.Database\bin\Debug\Start.Entity.pdb
 D:\MaLiang\GitHub\PhoneEmail\Code\Web\StartSolution\Start.Database\bin\Debug\Start.IDatabase.pdb
 D:\MaLiang\GitHub\PhoneEmail\Code\Web\StartSolution\Start.Database\obj\Debug\Start.Database.pdb
+C:\Users\lenovo\Documents\GitHub\PhoneEmail\Code\Web\StartSolution\Start.Database\bin\Debug\Start.Database.dll
+C:\Users\lenovo\Documents\GitHub\PhoneEmail\Code\Web\StartSolution\Start.Database\bin\Debug\Start.Database.pdb
+C:\Users\lenovo\Documents\GitHub\PhoneEmail\Code\Web\StartSolution\Start.Database\bin\Debug\Start.Entity.dll
+C:\Users\lenovo\Documents\GitHub\PhoneEmail\Code\Web\StartSolution\Start.Database\bin\Debug\Start.IDatabase.dll
+C:\Users\lenovo\Documents\GitHub\PhoneEmail\Code\Web\StartSolution\Start.Database\bin\Debug\Start.Entity.pdb
+C:\Users\lenovo\Documents\GitHub\PhoneEmail\Code\Web\StartSolution\Start.Database\bin\Debug\Start.IDatabase.pdb
+C:\Users\lenovo\Documents\GitHub\PhoneEmail\Code\Web\StartSolution\Start.Database\obj\Debug\Start.Database.csprojResolveAssemblyReference.cache
+C:\Users\lenovo\Documents\GitHub\PhoneEmail\Code\Web\StartSolution\Start.Database\obj\Debug\Start.Database.dll
+C:\Users\lenovo\Documents\GitHub\PhoneEmail\Code\Web\StartSolution\Start.Database\obj\Debug\Start.Database.pdb
