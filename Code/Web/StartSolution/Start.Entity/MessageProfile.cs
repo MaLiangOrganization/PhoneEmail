@@ -3,8 +3,8 @@ using System.Data.Linq.Mapping;
 
 namespace Start.Entity
 {
-    [Table(Name = "Message")]
-    public class MessageInfo
+    [Table(Name = "MessageProfile")]
+    public class MessageProfileInfo
     {
         [Column(IsPrimaryKey = true, IsDbGenerated = true, IsVersion = true)]
         public int ID { get; set; }

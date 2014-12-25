@@ -1,0 +1,72 @@
+﻿@model Start.Entity.UsersInfo
+<form class="form-horizontal" action="/Admin/Users" method="Post" data-ajax="true" data-ajax-begin="ajaxBegin" data-ajax-failure="ajaxFailure" data-ajax-success="ajaxSuccess">
+    <div class="panel panel-default">
+        <div class="panel-heading">用户</div>
+        <div class="panel-body">
+            <div class="form-group">
+                <label class="col-sm-2 control-label">登陆名称</label>
+                <div class="col-sm-5"><input name="usersInfo.Name" class="form-control" type="text" value="@Model.Name" /></div>
+             </div>
+            <div class="form-group">
+                <label class="col-sm-2 control-label">邮箱</label>
+                <div class="col-sm-5"><input name="usersInfo.Email" class="form-control" type="text" value="@Model.Email" /></div>
+             </div>
+            <div class="form-group">
+                <label class="col-sm-2 control-label">手机</label>
+                <div class="col-sm-5"><input name="usersInfo.Phone" class="form-control" type="text" value="@Model.Phone" /></div>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-2 control-label">真是姓名</label>
+                <div class="col-sm-5"><input name="usersInfo.RealName" class="form-control" type="text"  value="@Model.RealName" /></div>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-2 control-label">状态</label>
+                <div class="col-sm-5">
+                     <select name="usersInfo.Status" class="form-control">
+                        <option value="@Convert.ToInt32(Start.Entity.EnumStatus.YES)" @(Model.Status==Convert.ToInt32(Start.Entity.EnumStatus.YES)?"selected":"")>审核</option>
+                        <option value="@Convert.ToInt32(Start.Entity.EnumStatus.NO)" @(Model.Status==Convert.ToInt32(Start.Entity.EnumStatus.NO)?"selected":"")>等待</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-2 control-label">用户组</label>
+                <div class="col-sm-5">
+                     <select name="usersInfo.UserGroup" class="form-control">
+                        <option value="@Convert.ToInt32(Start.Entity.EnumUserGroup.User)" @(Model.Status==Convert.ToInt32(Start.Entity.EnumUserGroup.User)?"selected":"")>普通用户</option>
+                        <option value="@Convert.ToInt32(Start.Entity.EnumUserGroup.Admin)" @(Model.Status==Convert.ToInt32(Start.Entity.EnumUserGroup.Admin)?"selected":"")>管理员</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-2 control-label">照片</label>
+                <div class="col-sm-5"><input name="usersInfo.Photo" class="form-control" type="text"  value="@Model.Photo" /></div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                    <input type="submit" class="btn btn-primary" value="@(Model.ID==0?"新建":"修改")" />
+                    <input type="hidden" name="usersInfo.ID"  value="@Model.ID" />    
+                    <input type="hidden" name="usersInfo.Date"  value="@Model.Date" />   
+                    <span id="spanPrompt" class="text-warning ml"></span>        
+                </div>
+            </div>
+
+        </div>
+    </div>
+    
+    
+</form>
+@section ScriptSection{
+    <script type="text/javascript">
+        //Ajax开始提交
+        function ajaxBegin(){$("#spanPrompt").html("<img src='/Themes/Admin/Images/loading.jpg' alt='Loading' />");}
+        //Ajax提交失败
+        function ajaxFailure(){$("#spanPrompt").html("操作异常");}
+        //Ajax提交完成
+        function ajaxSuccess(json){ 
+            if(json.Success == 1)
+                window.location.href = "/Admin/UsersList";
+            else
+                $("#spanPrompt").html(json.Message);
+        }
+    </script>
+}

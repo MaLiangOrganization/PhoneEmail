@@ -40,9 +40,141 @@ namespace Start.Web.Controllers
             }
         }
 
-        public ActionResult EmailList()
+        [Start.Web.Common.AdminAuthentication(Authentication = false)]
+        public ActionResult Logout()
         {
-            return View();
+            MaLiang.Web.Utils.WriteCookie(EnumConst.CookieAdmin, "", -1);
+            return View("Index");
+        }
+
+        public ActionResult UsersList(string name, int pageIndex = 1)
+        {
+            PageInfo pageInfo = new PageInfo { PageIndex = pageIndex};
+            UsersInfo usersInfo = new UsersInfo {Name = name };
+            IList<UsersInfo> usersInfos = Start.DatabaseProvider.Instance().GetUser(usersInfo, pageInfo);
+            PagedList<UsersInfo> pagedList = new PagedList<UsersInfo>(usersInfos, pageInfo.PageIndex, pageInfo.PageSize, pageInfo.TotalRecord);
+            ViewBag.UsresInfo = usersInfo;
+            return View(pagedList);
+        }
+
+        public ActionResult Users(int? id)
+        {
+            UsersInfo usersInfo = null;
+            if (id != null && id.Value != 0) usersInfo = Start.DatabaseProvider.Instance().GetUserByID(id.Value);
+            if (usersInfo == null) usersInfo = new UsersInfo ();
+            return View(usersInfo);
+        }
+
+        [HttpPost]
+        public ActionResult Users(UsersInfo usersInfo)
+        {
+            if (usersInfo == null) return Json(new FeedbackInfo { Success = -1, Message = "获取实体出错" });
+            if (string.IsNullOrEmpty(usersInfo.Name)) return Json(new FeedbackInfo { Success = -1, Message = "请输入登陆名称" });
+            if (string.IsNullOrEmpty(usersInfo.Email)) return Json(new FeedbackInfo { Success = -1, Message = "请输入邮箱" });
+            usersInfo.Phone = string.IsNullOrWhiteSpace(usersInfo.Phone) == true ? "" : usersInfo.Phone;
+            usersInfo.Password = string.IsNullOrWhiteSpace(usersInfo.Password) == true ? "" : usersInfo.Password;
+            usersInfo.RealName = string.IsNullOrWhiteSpace(usersInfo.RealName) == true ? "" : usersInfo.RealName;
+            usersInfo.Photo = string.IsNullOrWhiteSpace(usersInfo.Photo) == true ? "" : usersInfo.Photo;
+            //新建
+            int result = 0;
+            if (usersInfo.ID == 0)
+            {
+                usersInfo.Date = DateTime.Now;
+                result = Start.DatabaseProvider.Instance().InsertUser(usersInfo);
+                if (result == 1)
+                    return Json(new FeedbackInfo { Success = 1, Message = "添加成功" });
+                else
+                    return Json(new FeedbackInfo { Success = -1, Message = "添加失败" });
+            }
+            else //编辑
+            {
+                result = Start.DatabaseProvider.Instance().UpdateUser(usersInfo);
+                if (result == 1)
+                    return Json(new FeedbackInfo { Success = 1, Message = "修改成功" });
+                else
+                    return Json(new FeedbackInfo { Success = -1, Message = "修改失败" });
+            }
+
+        }
+
+        public ActionResult EmailProfile(string name, int pageIndex = 1, int pageSize = 20)
+        {
+            PageInfo pageInfo = new PageInfo { PageIndex = pageIndex, PageSize = pageSize };
+            UsersInfo usersInfo = new UsersInfo { Name = name };
+            IList<UsersInfo> usersInfos = Start.DatabaseProvider.Instance().GetUser(usersInfo, pageInfo);
+            PagedList<UsersInfo> pagedList = new PagedList<UsersInfo>(usersInfos, pageInfo.PageIndex, pageInfo.PageSize, pageInfo.TotalRecord);
+            ViewBag.UsresInfo = usersInfo;
+            return View(pagedList);
+        }
+
+        public ActionResult Email(string name, int pageIndex = 1, int pageSize = 20)
+        {
+            PageInfo pageInfo = new PageInfo { PageIndex = pageIndex, PageSize = pageSize };
+            UsersInfo usersInfo = new UsersInfo { Name = name };
+            IList<UsersInfo> usersInfos = Start.DatabaseProvider.Instance().GetUser(usersInfo, pageInfo);
+            PagedList<UsersInfo> pagedList = new PagedList<UsersInfo>(usersInfos, pageInfo.PageIndex, pageInfo.PageSize, pageInfo.TotalRecord);
+            ViewBag.UsresInfo = usersInfo;
+            return View(pagedList);
+        }
+
+        public ActionResult EmailAddress(string name, int pageIndex = 1, int pageSize = 20)
+        {
+            PageInfo pageInfo = new PageInfo { PageIndex = pageIndex, PageSize = pageSize };
+            UsersInfo usersInfo = new UsersInfo { Name = name };
+            IList<UsersInfo> usersInfos = Start.DatabaseProvider.Instance().GetUser(usersInfo, pageInfo);
+            PagedList<UsersInfo> pagedList = new PagedList<UsersInfo>(usersInfos, pageInfo.PageIndex, pageInfo.PageSize, pageInfo.TotalRecord);
+            ViewBag.UsresInfo = usersInfo;
+            return View(pagedList);
+        }
+
+        public ActionResult EmailSend(string name, int pageIndex = 1, int pageSize = 20)
+        {
+            PageInfo pageInfo = new PageInfo { PageIndex = pageIndex, PageSize = pageSize };
+            UsersInfo usersInfo = new UsersInfo { Name = name };
+            IList<UsersInfo> usersInfos = Start.DatabaseProvider.Instance().GetUser(usersInfo, pageInfo);
+            PagedList<UsersInfo> pagedList = new PagedList<UsersInfo>(usersInfos, pageInfo.PageIndex, pageInfo.PageSize, pageInfo.TotalRecord);
+            ViewBag.UsresInfo = usersInfo;
+            return View(pagedList);
+        }
+
+        public ActionResult MessageProfile(string name, int pageIndex = 1, int pageSize = 20)
+        {
+            PageInfo pageInfo = new PageInfo { PageIndex = pageIndex, PageSize = pageSize };
+            UsersInfo usersInfo = new UsersInfo { Name = name };
+            IList<UsersInfo> usersInfos = Start.DatabaseProvider.Instance().GetUser(usersInfo, pageInfo);
+            PagedList<UsersInfo> pagedList = new PagedList<UsersInfo>(usersInfos, pageInfo.PageIndex, pageInfo.PageSize, pageInfo.TotalRecord);
+            ViewBag.UsresInfo = usersInfo;
+            return View(pagedList);
+        }
+
+        public ActionResult PhoneAddress(string name, int pageIndex = 1, int pageSize = 20)
+        {
+            PageInfo pageInfo = new PageInfo { PageIndex = pageIndex, PageSize = pageSize };
+            UsersInfo usersInfo = new UsersInfo { Name = name };
+            IList<UsersInfo> usersInfos = Start.DatabaseProvider.Instance().GetUser(usersInfo, pageInfo);
+            PagedList<UsersInfo> pagedList = new PagedList<UsersInfo>(usersInfos, pageInfo.PageIndex, pageInfo.PageSize, pageInfo.TotalRecord);
+            ViewBag.UsresInfo = usersInfo;
+            return View(pagedList);
+        }
+
+        public ActionResult MessageSend(string name, int pageIndex = 1, int pageSize = 20)
+        {
+            PageInfo pageInfo = new PageInfo { PageIndex = pageIndex, PageSize = pageSize };
+            UsersInfo usersInfo = new UsersInfo { Name = name };
+            IList<UsersInfo> usersInfos = Start.DatabaseProvider.Instance().GetUser(usersInfo, pageInfo);
+            PagedList<UsersInfo> pagedList = new PagedList<UsersInfo>(usersInfos, pageInfo.PageIndex, pageInfo.PageSize, pageInfo.TotalRecord);
+            ViewBag.UsresInfo = usersInfo;
+            return View(pagedList);
+        }
+
+        public ActionResult Help(string name, int pageIndex = 1, int pageSize = 20)
+        {
+            PageInfo pageInfo = new PageInfo { PageIndex = pageIndex, PageSize = pageSize };
+            UsersInfo usersInfo = new UsersInfo { Name = name };
+            IList<UsersInfo> usersInfos = Start.DatabaseProvider.Instance().GetUser(usersInfo, pageInfo);
+            PagedList<UsersInfo> pagedList = new PagedList<UsersInfo>(usersInfos, pageInfo.PageIndex, pageInfo.PageSize, pageInfo.TotalRecord);
+            ViewBag.UsresInfo = usersInfo;
+            return View(pagedList);
         }
 
 

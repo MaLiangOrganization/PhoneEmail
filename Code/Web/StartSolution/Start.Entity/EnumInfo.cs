@@ -2,6 +2,11 @@
 
 namespace Start.Entity
 {
+    public enum EnumStatus
+    {
+        NO = -1,
+        YES = 1
+    }
     public enum EnumUserGroup
     {
         User = 1,
