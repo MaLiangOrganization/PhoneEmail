@@ -3,7 +3,7 @@ using System.Data.Linq.Mapping;
 
 namespace Start.Entity
 {
-    [Table(Name = "EmailProfile")]
+    [Table(Name = "EmailSend")]
     public class EmailSendInfo
     {
         [Column(IsPrimaryKey = true, IsDbGenerated = true, IsVersion = true)]

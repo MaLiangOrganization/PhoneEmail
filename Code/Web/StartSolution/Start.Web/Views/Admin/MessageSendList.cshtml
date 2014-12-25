@@ -1,11 +1,11 @@
 ﻿@using Webdiyer.WebControls.Mvc;
-@model PagedList<Start.Entity.EmailInfo>
+@model PagedList<Start.Entity.MessageSendInfo>
 
-<p class="highlight">邮箱列表 </p>
-<form action="/Admin/EmailList" class="form-inline" method="get">
+<p class="highlight">短信发送列表 </p>
+<form action="/Admin/MessageSendList" class="form-inline" method="get">
      <div class="form-group input-group-sm">
         <label class="control-label">用户编号</label>
-        <input type="text" value="@(ViewBag.EmailInfo.UserID==0?"":ViewBag.EmailInfo.UserID.ToString())" name="userID" class="form-control" />
+        <input type="text" value="@(ViewBag.MessageSendInfo.UserID==0?"":ViewBag.MessageSendInfo.UserID.ToString())" name="userID" class="form-control" />
      </div>
     <div class="form-group">
          <input type="submit" class="btn btn-primary" value="搜索" />
@@ -16,8 +16,8 @@
         <tr>
             <th>编号</th>
             <th>用户编号</th>
-            <th>主题</th>
-            <th>内容</th>
+            <th>短信内容</th>
+            <th>接受人手机</th>
         </tr>
     </thead>
     <tbody>
@@ -26,10 +26,10 @@
         {
             index += 1;
             <tr>
-                    <td><a href="/Admin/Email/@item.ID">@item.ID</a></td>
+                    <td>@item.ID</td>
                     <td>@item.UserID</td>
-                    <td>@item.Subject</td>
-                    <td>@item.Memo</td>             
+                    <td>@item.Memo</td>
+                    <td>@item.ReceivePhone</td>             
             </tr>
         }
     </tbody>

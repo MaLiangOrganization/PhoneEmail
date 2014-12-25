@@ -2,7 +2,7 @@
 @using Webdiyer.WebControls.Mvc;
 @model PagedList<Start.Entity.UsersInfo>
 
-<p class="highlight">用户列表 </p>
+<p class="highlight">邮件发送列表 </p>
 <form action="/Admin/UsersList" class="form-inline" method="get">
      <div class="form-group input-group-sm">
         <label class="control-label">名称</label>
@@ -32,8 +32,8 @@
         {
             index += 1;
             <tr>
-                    <td>@item.ID</td>
-                    <td><a href="/Admin/Users/@item.ID">@item.Name</a></td>
+                    <td><a href="/Admin/Users/@item.ID">@item.ID</a></td>
+                    <td>@item.Name</td>
                     <td>@item.Email</td>
                     <td>@item.Phone</td>
                     <td>@item.RealName</td>

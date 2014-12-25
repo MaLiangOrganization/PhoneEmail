@@ -10,12 +10,12 @@ namespace Start.Entity
         public int ID { get; set; }
 
         [Column]
-        public int Name { get; set; }
+        public int UserID { get; set; }
 
         [Column]
-        public string Email { get; set; }
+        public string Name { get; set; }
 
         [Column]
-        public string Phone { get; set; } 
+        public string Email { get; set; } 
     }
 }
