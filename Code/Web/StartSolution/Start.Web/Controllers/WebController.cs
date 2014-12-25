@@ -19,6 +19,9 @@ namespace Start.Web.Controllers
         {
             return View(); 
         }
-
+        public ActionResult Personal()
+        {
+            return View();
+        }
     }
 }

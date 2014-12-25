@@ -3,14 +3,49 @@
 <head>
     <title>首页</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="~/Themes/Web/CSS/Index.css" rel="stylesheet" />
-    <link href="~/Themes/Web/CSS/Member.css" rel="stylesheet" />
     <link href="~/Themes/Web/Icons/iconfont.css" rel="stylesheet" />
     <link href="~/Themes/Web/bootstrap/css/bootstrap.css" rel="stylesheet" />
     <link href="~/Themes/Web/CSS/Web.css" rel="stylesheet" />
 </head> 
 <body>
+   <header>              
+     <nav class="navbar navbar-default" role="navigation" >
+     <div class="container-fluid" style="width:1170px;">
+     <!-- Brand and toggle get grouped for better mobile display -->
+     <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/Web/Index">LOGO</a>
+        </div>
+     <!-- Collect the nav links, forms, and other content for toggling -->
+     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+            <li><a href="/Web/Index">首&nbsp;&nbsp;&nbsp;&nbsp;页</a><div class="nav-line"></div></li>
+            <li><a href="/Web/Email">邮件群发</a><div class="nav-line"></div></li>
+            <li><a href="#">短信群发</a><div class="nav-line"></div></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+            <li><a href="#" data-toggle="modal" data-target="#about-modal" style="display:none;">登录</a>
+                <a href="/Web/Personal">个人中心</a><div class="nav-line"></div></li>
+            <li><a href="#">QQ联系</a><div class="nav-line"></div></li>
+            <li><a href="#">意见反馈</a><div class="nav-line"></div></li>
+        </ul>
+        </div><!-- /.navbar-collapse -->
+     </div><!-- /.container-fluid -->
+     </nav>
+</header>
+     <div class="container" style="width:1170px;">
     @RenderBody()
+
+            <footer class="footer">
+              <p class="pull-right"><a href="#top"> </a></p>
+              <p class="center">Company &copy;1998-2014 Silence. All Rights Reseved. </p>
+            </footer>
+     </div>
     <script src="~/Themes/Web/JS/jquery1-10-1.js"></script>
     <script src="~/Themes/Web/bootstrap/js/bootstrap.min.js"></script>
     @RenderSection("ScriptSection", false)

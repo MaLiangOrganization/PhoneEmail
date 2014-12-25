@@ -1,35 +1,5 @@
-﻿<div class="container" style="width:1170px;">
-    <div class="row-fluid">
-        <header>              
-        <nav class="navbar navbar-default" role="navigation">
-        <div class="container-fluid">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="/Web/Index">LOGO</a>
-        </div>
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        <ul class="nav navbar-nav">
-            <li><a href="/Web/Index">首&nbsp;&nbsp;&nbsp;&nbsp;页</a><div class="nav-line"></div></li>
-            <li><a href="/Web/Email">邮件群发</a><div class="nav-line"></div></li>
-            <li><a href="#">短信群发</a><div class="nav-line"></div></li>
-        </ul>
-        <ul class="nav navbar-nav navbar-right">
-            <li><a href="#" data-toggle="modal" data-target="#about-modal">登录</a><div class="nav-line"></div></li>
-            <li><a href="#">QQ联系</a><div class="nav-line"></div></li>
-            <li><a href="#">意见反馈</a><div class="nav-line"></div></li>
-        </ul>
-        </div><!-- /.navbar-collapse -->
-    </div><!-- /.container-fluid -->
-    </nav>
-</header>
-    <!--header end-->                      
+﻿    <!--header end-->
+    <div class="row-fluid">                     
     <div class="main-content">
     <!-- 广告轮播 -->
     <div id="ad-carousel" class="carousel slide" data-ride="carousel">
@@ -43,9 +13,7 @@
                     <div class="container">
                     <div class="carousel-caption">
                         <h1>手机短息</h1>
-
                         <p>新时代的营销方式，它打破了人为的局限性，能快速的传递信息，</p>
-
                         <p></p>
                     </div>
                 </div>
@@ -76,16 +44,9 @@
     </div>
 </div>        
     <!-- Clear "float". Without a better way, do not delete it，thanks! -->
+    </div>    
     </div>
-    <footer id="footer">
-    <p class="pull-right"><a href="#top"> </a></p>
-    <p >Company &copy;1998-2014 Silence. All Rights Reseved. </p>
-    </footer>
-    </div>
-    <!--row-fluid end-->
-</div>
-<!--container end-->
-<!--登陆-->
+   <!--登陆-->
 <div class="modal fade" id="about-modal" tabindex="-1" role="dialog" aria-labelledby="modal-label"
         aria-hidden="true">
     <div class="modal-dialog">
@@ -93,30 +54,29 @@
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal"><span
                         aria-hidden="true">&times;</span><span class="sr-only">关闭</span></button>
-                <h4 class="modal-title" id="modal-label"><a class="modal-login modal-active" href="#" ">登录</a><a class="modal-enroll" href="#">注册</a></h4>
+                <h4 class="modal-title Modal-login"><a class="modal-login modal-active" href="#" ">登录</a><a class="modal-enroll" href="#">注册</a></h4>
                 </div>
             <div class="modal-body">
                 <div class="login">
-                    <span class="iconfont account">&#xe629;|</span><input type="text" name="email" class="rlf-input" placeholder="请输入登录账号">
-                    <div class="Occupying"><p class="p error-account iconfont">&#xf0015;账号格式不正确</p></div>                  
+                    <span class="iconfont account">&#xe67a;|</span><input type="text" name="email" class="rlf-input" placeholder="请输入登录账号">
+                    <div class="Occupying"><p class="Modal-errorPrompt error-account iconfont">&#xf0003;账号格式不正确</p></div>                  
                     <span class="iconfont account">&#xe60d;|</span><input type="password" name="passwor"  class="rlf-input" placeholder="请输入密码"><br />
-                        <div class="Occupying"><p class="p error-pass iconfont">&#xe69f;密码太短</p></div>                   
-                    <div><input type="checkbox" id="ss"/> <label for="ss" class="auto">自动登录</label><a class="forget" href="#">忘记密码？</a></div>
-                    <div class="Occupying"><p class="p error-pass iconfont">&#xf0015;账户名或密码错误</p></div> 
+                        <div class="Occupying"><p class="Modal-errorPrompt error-pass iconfont">&#xf0003;密码太短</p></div>                   
+                    <div><input type="checkbox" id="ss"/> <label for="ss" class="auto">自动登录</label><a class="forget-password" href="#">忘记密码？</a></div>
+                    <div class="Occupying"><p class="Modal-errorPrompt error-pass iconfont">&#xf0003;账户名或密码错误</p></div> 
                     <button type="button" class="btn btn-success  modal-btn" data-dismiss="modal">登陆</button>
             </div>
                 <div class="enroll" style="display:none;">
-                <span class="iconfont account">&#xe629;|</span><input type="text" name="email" class="rlf-input" placeholder="请输入登录账号">
-                        <div class="Occupying"><p class="p error-account iconfont">&#xf0015;账号格式不正确</p></div>                  
+                <span class="iconfont account">&#xe67a;|</span><input type="text" name="email" class="rlf-input" placeholder="请输入登录账号">
+                        <div class="Occupying"><p class="Modal-errorPrompt error-account iconfont">&#xf0003;账号格式不正确</p></div>                  
                     <span class="iconfont account">&#xe60d;|</span><input type="password" name="password" class="rlf-input" placeholder="请输入密码">
-                        <div class="Occupying"><p class="p error-pass iconfont">&#xe69f;密码太短</p></div>                    
-                        <span class="iconfont account">&#xe629;|</span><input type="text" name="email" class="rlf-input" placeholder="请再次输入密码">
-                        <div class="Occupying"><p class="p error-account iconfont">&#xf0015;账号格式不正确</p></div>  
+                        <div class="Occupying"><p class="Modal-errorPrompt error-pass iconfont">&#xe623;密码太短</p></div>                    
+                        <span class="iconfont account">&#xe60d;|</span><input type="text" name="email" class="rlf-input" placeholder="请再次输入密码">
+                        <div class="Occupying"><p class="Modal-errorPrompt error-account iconfont">&#xf0003;两次密码不一致</p></div>  
                         <button type="button" class="btn btn-success  modal-btn" data-dismiss="modal">注册</button>
-
                 </div>
-                </div>
-    </div>
+           </div>
+     </div>
     </div>
 </div>
 @section ScriptSection

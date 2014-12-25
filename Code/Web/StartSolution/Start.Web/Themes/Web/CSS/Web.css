@@ -1,1 +1,36 @@
-﻿
+﻿@charset "utf-8";
+* { margin:0px; padding:0px;text-decoration:none !important; list-style:none;}
+.footer{ margin: 20px 0px; text-align:center; background-color:#41BED2; height:50px;line-height:50px;}
+.Modal-header,.list-group-item{ background-color:#41BED2;}
+/***************Index******************/
+.nav li:hover a { height:48px;}
+.nav li:hover div {position:relative; height:3px; margin:0 5px; background-color:#00F5FF; margin-bottom:-2px;}
+.collapse ul:first-child li a { font-size:16px; font-weight:bold;}
+.Modal-login a,.forget-password{ margin:0px 20px; }
+.Modal-login a:hover { color:#ff6a00;}
+.modal-active {color:#ff6a00;}
+.login,.enroll{ text-align:center; position:relative;}
+.rlf-input{ height:40px; width:250px; padding-left:30px; margin-left:-30px;}
+.account{ position:relative; top:0px; left:0px;}
+.modal-btn{ text-align:center; width:250px !important; margin-bottom:20px !important; margin-top:5px;}
+.auto { font-weight:normal;}
+.Modal-errorPrompt { height:15px; width:auto;font-size:13px !important; color:red; text-align:left;margin-left:70px;display:none;}
+.Occupying {height:22px; width:auto;}
+.carousel { height: 500px; margin-bottom: 20px;} .carousel .item { height: 500px; background-color: #000; } .carousel .item img {width: 100%;}
+.carousel-caption { z-index: 10; }
+/***************Email******************/
+.Emali-form,.modal-footer {margin:20px auto; text-align:center !important;}
+.Modal-dialog { width:800px !important;}
+.Modal-thcenter {width:553px !important;}
+.Modal-Emailerror{ color:red;}
+.inputEmail {height:25px; width:250px; padding-left:30px; margin-left:-30px;}
+.Modal-body { max-height:500px; overflow-x:hidden; overflow-y:auto;}
+.displayNone { display:none}
+/******************Personal****************/
+.list-group-item:hover,.Personal-active {background-color:#00F5FF;}
+.span-margin { margin:10px 10px; color:#808080;}
+.personal-input {width: 304px;height: 30px;margin-left: -30px;padding-left: 30px; margin-top:10px; margin-bottom:10px;}
+.personal-nav{height:auto; width:200px; margin:10px 0px; float:left;}
+.tab-div{height:650px;width:939px; margin-top:10px; background:#D1EEEE;float:left;}
+.tab-index{margin:45px 250px; position:relative;}
+.tab-image{width:40px; height:40px; position:relative; top:15px;}

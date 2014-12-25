@@ -17,3 +17,8 @@ D:\MaLiang\GitHub\PhoneEmail\Code\Web\StartSolution\Start.Entity\obj\Debug\Start
 D:\MaLiang\GitHub\PhoneEmail\Code\Web\StartSolution\Start.Entity\obj\Debug\Start.Entity.pdb
 D:\MaLiang\GitHub\PhoneEmail\Code\Web\StartSolution\Start.Entity\bin\Debug\Start.Entity.dll
 D:\MaLiang\GitHub\PhoneEmail\Code\Web\StartSolution\Start.Entity\bin\Debug\Start.Entity.pdb
+C:\Users\lenovo\Documents\GitHub\PhoneEmail\Code\Web\StartSolution\Start.Entity\bin\Debug\Start.Entity.dll
+C:\Users\lenovo\Documents\GitHub\PhoneEmail\Code\Web\StartSolution\Start.Entity\bin\Debug\Start.Entity.pdb
+C:\Users\lenovo\Documents\GitHub\PhoneEmail\Code\Web\StartSolution\Start.Entity\obj\Debug\Start.Entity.dll
+C:\Users\lenovo\Documents\GitHub\PhoneEmail\Code\Web\StartSolution\Start.Entity\obj\Debug\Start.Entity.pdb
+C:\Users\lenovo\Documents\GitHub\PhoneEmail\Code\Web\StartSolution\Start.Entity\obj\Debug\Start.Entity.csprojResolveAssemblyReference.cache
