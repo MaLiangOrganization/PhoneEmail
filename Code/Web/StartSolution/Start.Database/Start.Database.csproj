@@ -45,6 +45,14 @@
     <Compile Include="DataContextDB.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Users.cs" />
+    <Compile Include="EmailProfile.cs" />
+    <Compile Include="Email.cs" />
+    <Compile Include="EmailAddress.cs" />
+    <Compile Include="EmailSend.cs" />
+    <Compile Include="MessageProfile.cs" />
+    <Compile Include="PhoneAddress.cs" />
+    <Compile Include="MessageSend.cs" />
+    <Compile Include="Help.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Start.Entity\Start.Entity.csproj">

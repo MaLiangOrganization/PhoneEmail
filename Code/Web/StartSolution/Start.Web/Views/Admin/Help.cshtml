@@ -1,0 +1,60 @@
+﻿@model Start.Entity.HelpInfo
+<form class="form-horizontal" action="/Admin/Help" method="Post" data-ajax="true" data-ajax-begin="ajaxBegin" data-ajax-failure="ajaxFailure" data-ajax-success="ajaxSuccess">
+    <div class="panel panel-default">
+        <div class="panel-heading">帮助</div>
+        <div class="panel-body">
+            <div class="form-group">
+                <label class="col-sm-2 control-label">名称</label>
+                <div class="col-sm-5"><input name="helpInfo.Name" class="form-control" type="text" value="@Model.Name" /></div>
+             </div>
+            <div class="form-group">
+                <label class="col-sm-2 control-label">内容</label>
+                <div class="col-sm-5"><input name="helpInfo.Memo" class="form-control" type="text" value="@Model.Memo" /></div>
+             </div>
+            <div class="form-group">
+                <label class="col-sm-2 control-label">类型</label>
+                <div class="col-sm-5">
+                     <select name="helpInfo.Type" class="form-control">
+                        <option value="@Convert.ToInt32(Start.Entity.EnumHelp.Email)" @(Model.Status==Convert.ToInt32(Start.Entity.EnumStatus.YES)?"selected":"")>邮件</option>
+                        <option value="@Convert.ToInt32(Start.Entity.EnumHelp.Phone)" @(Model.Status==Convert.ToInt32(Start.Entity.EnumStatus.NO)?"selected":"")>短信</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-2 control-label">状态</label>
+                <div class="col-sm-5">
+                     <select name="helpInfo.Status" class="form-control">
+                        <option value="@Convert.ToInt32(Start.Entity.EnumStatus.YES)" @(Model.Status==Convert.ToInt32(Start.Entity.EnumStatus.YES)?"selected":"")>审核</option>
+                        <option value="@Convert.ToInt32(Start.Entity.EnumStatus.NO)" @(Model.Status==Convert.ToInt32(Start.Entity.EnumStatus.NO)?"selected":"")>等待</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                    <input type="submit" class="btn btn-primary" value="@(Model.ID==0?"新建":"修改")" />
+                    <input type="hidden" name="helpInfo.ID"  value="@Model.ID" />    
+                    <input type="hidden" name="helpInfo.Date"  value="@Model.Date" /> 
+                    <span id="spanPrompt" class="text-warning ml"></span>        
+                </div>
+            </div>
+
+        </div>
+    </div>
+    
+    
+</form>
+@section ScriptSection{
+    <script type="text/javascript">
+        //Ajax开始提交
+        function ajaxBegin(){$("#spanPrompt").html("<img src='/Themes/Admin/Images/loading.jpg' alt='Loading' />");}
+        //Ajax提交失败
+        function ajaxFailure(){$("#spanPrompt").html("操作异常");}
+        //Ajax提交完成
+        function ajaxSuccess(json){ 
+            if(json.Success == 1)
+                window.location.href = "/Admin/HelpList";
+            else
+                $("#spanPrompt").html(json.Message);
+        }
+    </script>
+}

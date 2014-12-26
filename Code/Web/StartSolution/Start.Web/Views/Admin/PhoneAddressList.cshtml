@@ -1,11 +1,11 @@
 ﻿@using Webdiyer.WebControls.Mvc;
-@model PagedList<Start.Entity.EmailInfo>
+@model PagedList<Start.Entity.PhoneAddressInfo>
 
-<p class="highlight">邮箱列表 </p>
-<form action="/Admin/EmailList" class="form-inline" method="get">
+<p class="highlight">手机联系人列表 </p>
+<form action="/Admin/PhoneAddressList" class="form-inline" method="get">
      <div class="form-group input-group-sm">
         <label class="control-label">用户编号</label>
-        <input type="text" value="@(ViewBag.EmailInfo.UserID==0?"":ViewBag.EmailInfo.UserID.ToString())" name="userID" class="form-control" />
+        <input type="text" value="@(ViewBag.PhoneAddressInfo.UserID==0?"":ViewBag.PhoneAddressInfo.UserID.ToString())" name="userID" class="form-control" />
      </div>
     <div class="form-group">
          <input type="submit" class="btn btn-primary" value="搜索" />
@@ -16,8 +16,8 @@
         <tr>
             <th>编号</th>
             <th>用户编号</th>
-            <th>主题</th>
-            <th>内容</th>
+            <th>联系人名</th>
+            <th>联系人手机</th>
         </tr>
     </thead>
     <tbody>
@@ -26,10 +26,10 @@
         {
             index += 1;
             <tr>
-                    <td><a href="/Admin/Email/@item.ID">@item.ID</a></td>
+                    <td><a href="/Admin/PhoneAddress/@item.ID">@item.ID</a></td>
                     <td>@item.UserID</td>
-                    <td>@item.Subject</td>
-                    <td>@item.Memo</td>             
+                    <td>@item.Name</td>
+                    <td>@item.Phone</td>             
             </tr>
         }
     </tbody>

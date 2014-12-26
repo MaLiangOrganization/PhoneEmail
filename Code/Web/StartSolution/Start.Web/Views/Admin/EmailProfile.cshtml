@@ -1,0 +1,62 @@
+﻿@model Start.Entity.EmailProfileInfo
+<form class="form-horizontal" action="/Admin/EmailProfile" method="Post" data-ajax="true" data-ajax-begin="ajaxBegin" data-ajax-failure="ajaxFailure" data-ajax-success="ajaxSuccess">
+    <div class="panel panel-default">
+        <div class="panel-heading">邮箱配置</div>
+        <div class="panel-body">
+            <div class="form-group">
+                <label class="col-sm-3 control-label">用户编号</label>
+                <div class="col-sm-5"><input name="emailProfileInfo.UserID" class="form-control" type="text" value="@(Model.UserID==0?"":Model.UserID.ToString())" /></div>
+             </div>
+            <div class="form-group">
+                <label class="col-sm-3 control-label">发送邮箱服务器</label>
+                <div class="col-sm-5"><input name="emailProfileInfo.SMTP" class="form-control" type="text" value="@Model.SMTP" /></div>
+             </div>
+            <div class="form-group">
+                <label class="col-sm-3 control-label">发送邮箱服务器端口</label>
+                <div class="col-sm-5"><input name="emailProfileInfo.SMTPPort" class="form-control" type="text" value="@Model.SMTPPort" /></div>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-3 control-label">邮箱登陆名</label>
+                <div class="col-sm-5"><input name="emailProfileInfo.Name" class="form-control" type="text"  value="@Model.Name" /></div>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-3 control-label">邮箱登陆密码</label>
+                <div class="col-sm-5"><input name="emailProfileInfo.Password" class="form-control" type="text"  value="@Model.Password" /></div>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-3 control-label">安全</label>
+                <div class="col-sm-5">
+                     <select name="emailProfileInfo.SSL" class="form-control">
+                        <option value="@Convert.ToInt32(Start.Entity.EnumStatus.YES)" @(Model.SSL==Convert.ToInt32(Start.Entity.EnumStatus.YES)?"selected":"")>支持</option>
+                        <option value="@Convert.ToInt32(Start.Entity.EnumStatus.NO)" @(Model.SSL==Convert.ToInt32(Start.Entity.EnumStatus.NO)?"selected":"")>不支持</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                    <input type="submit" class="btn btn-primary" value="@(Model.ID==0?"新建":"修改")" />
+                    <input type="hidden" name="emailProfileInfo.ID"  value="@Model.ID" />    
+                    <span id="spanPrompt" class="text-warning ml"></span>        
+                </div>
+            </div>
+
+        </div>
+    </div>
+    
+    
+</form>
+@section ScriptSection{
+    <script type="text/javascript">
+        //Ajax开始提交
+        function ajaxBegin(){$("#spanPrompt").html("<img src='/Themes/Admin/Images/loading.jpg' alt='Loading' />");}
+        //Ajax提交失败
+        function ajaxFailure(){$("#spanPrompt").html("操作异常");}
+        //Ajax提交完成
+        function ajaxSuccess(json){ 
+            if(json.Success == 1)
+                window.location.href = "/Admin/EmailProfileList";
+            else
+                $("#spanPrompt").html(json.Message);
+        }
+    </script>
+}

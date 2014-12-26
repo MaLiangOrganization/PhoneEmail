@@ -48,7 +48,7 @@
     <Compile Include="EnumInfo.cs" />
     <Compile Include="FeedbackInfo.cs" />
     <Compile Include="HelpInfo.cs" />
-    <Compile Include="MessageInfo.cs" />
+    <Compile Include="MessageProfile.cs" />
     <Compile Include="MessageSendInfo.cs" />
     <Compile Include="PageInfo.cs" />
     <Compile Include="PhoneAddressInfo.cs" />

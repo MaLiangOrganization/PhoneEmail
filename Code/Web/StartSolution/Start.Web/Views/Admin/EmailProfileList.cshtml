@@ -1,0 +1,43 @@
+﻿@using Webdiyer.WebControls.Mvc;
+@model PagedList<Start.Entity.EmailProfileInfo>
+
+<p class="highlight">邮箱配置列表 </p>
+<form action="/Admin/EmailProfileList" class="form-inline" method="get">
+     <div class="form-group input-group-sm">
+        <label class="control-label">用户编号</label>
+        <input type="text" value="@(ViewBag.EmailProfileInfo.UserID==0?"":ViewBag.EmailProfileInfo.UserID.ToString())" name="userID" class="form-control" />
+     </div>
+    <div class="form-group">
+         <input type="submit" class="btn btn-primary" value="搜索" />
+    </div>
+</form>
+<table class="table table-bordered mt table-hover">
+    <thead>
+        <tr>
+            <th>编号</th>
+            <th>用户编号</th>
+            <th>发送邮箱服务器</th>
+            <th>发送邮箱服务器端口</th>
+            <th>邮箱登陆名</th>
+            <th>邮箱登陆密码</th>
+            <th>安全</th>
+        </tr>
+    </thead>
+    <tbody>
+        @{int index = -1; }
+        @foreach (var item in Model)
+        {
+            index += 1;
+            <tr>
+                    <td><a href="/Admin/EmailProfile/@item.ID">@item.ID</a></td>
+                    <td>@item.UserID</td>
+                    <td>@item.SMTP</td>
+                    <td>@item.SMTPPort</td>
+                    <td>@item.Name</td>
+                    <td>@item.Password</td>
+                    <td>@(item.SSL == Convert.ToInt16(Start.Entity.EnumStatus.YES) ? "支持" : "未不支持")</td>     
+            </tr>
+        }
+    </tbody>
+</table> 
+@Html.Pager(Model,new PagerOptions{PageIndexParameterName = "pageIndex",CssClass="pagination"})
