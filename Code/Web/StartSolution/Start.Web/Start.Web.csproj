@@ -244,6 +244,9 @@
   <ItemGroup>
     <Content Include="Views\Web\Email.cshtml" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Web\Phone.cshtml" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

@@ -23,5 +23,9 @@ namespace Start.Web.Controllers
         {
             return View();
         }
+        public ActionResult Phone()
+        {
+            return View();
+        }
     }
 }

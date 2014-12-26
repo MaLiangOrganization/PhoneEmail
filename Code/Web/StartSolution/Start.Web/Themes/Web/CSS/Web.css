@@ -28,9 +28,11 @@
 .displayNone { display:none}
 /******************Personal****************/
 .list-group-item:hover,.Personal-active {background-color:#00F5FF;}
+.list-group-item span {margin-left:60px;}
 .span-margin { margin:10px 10px; color:#808080;}
 .personal-input {width: 304px;height: 30px;margin-left: -30px;padding-left: 30px; margin-top:10px; margin-bottom:10px;}
 .personal-nav{height:auto; width:200px; margin:10px 0px; float:left;}
 .tab-div{height:650px;width:939px; margin-top:10px; background:#D1EEEE;float:left;}
 .tab-index{margin:45px 250px; position:relative;}
 .tab-image{width:40px; height:40px; position:relative; top:15px;}
+.nav-title {font-size:16px;}
