@@ -22,3 +22,8 @@ C:\Users\lenovo\Documents\GitHub\PhoneEmail\Code\Web\StartSolution\Start.Entity\
 C:\Users\lenovo\Documents\GitHub\PhoneEmail\Code\Web\StartSolution\Start.Entity\obj\Debug\Start.Entity.dll
 C:\Users\lenovo\Documents\GitHub\PhoneEmail\Code\Web\StartSolution\Start.Entity\obj\Debug\Start.Entity.pdb
 C:\Users\lenovo\Documents\GitHub\PhoneEmail\Code\Web\StartSolution\Start.Entity\obj\Debug\Start.Entity.csprojResolveAssemblyReference.cache
+H:\GitHub\PhoneEmail\Code\Web\StartSolution\Start.Entity\bin\Debug\Start.Entity.dll
+H:\GitHub\PhoneEmail\Code\Web\StartSolution\Start.Entity\bin\Debug\Start.Entity.pdb
+H:\GitHub\PhoneEmail\Code\Web\StartSolution\Start.Entity\obj\Debug\Start.Entity.csprojResolveAssemblyReference.cache
+H:\GitHub\PhoneEmail\Code\Web\StartSolution\Start.Entity\obj\Debug\Start.Entity.dll
+H:\GitHub\PhoneEmail\Code\Web\StartSolution\Start.Entity\obj\Debug\Start.Entity.pdb

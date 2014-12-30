@@ -30,9 +30,9 @@
         </ul>
         <ul class="nav navbar-nav navbar-right">
             <li><a href="#" data-toggle="modal" data-target="#about-modal" style="display:none;">登录</a>
-                <a href="/Web/Personal">个人中心</a><div class="nav-line"></div></li>
+                <a href="/Web/Personal" >个人中心</a><div class="nav-line"></div></li>
             <li><a href="#">QQ联系</a><div class="nav-line"></div></li>
-            <li><a href="#">意见反馈</a><div class="nav-line"></div></li>
+            <li><a href="#" data-toggle="modal" data-target="#about-idear">意见反馈</a><div class="nav-line"></div></li>
         </ul>
         </div><!-- /.navbar-collapse -->
      </div><!-- /.container-fluid -->
@@ -46,6 +46,25 @@
               <p class="center">Company &copy;1998-2014 Silence. All Rights Reseved. </p>
             </footer>
      </div>
+    <!--意见反馈-->
+    <div class="modal fade" id="about-idear" tabindex="-1" role="dialog" aria-labelledby="modal-label"aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span
+                        aria-hidden="true">&times;</span><span class="sr-only">关闭</span></button>
+                <h4 class="modal-title">意见反馈</h4>
+                </div>
+            <div class="modal-body">
+                <div class="enroll" >
+                   <p  style="color:red ">感谢您的宝贵意见，我们会以最快的速度解决.....</p>
+                   <textarea name="textarea" style="width:351px; height:78px;"  wrap="soft" placeholder="请您的意见信息......" ></textarea><br />
+                   <button type="button" class="btn btn-success  modal-btn" >发送</button>
+                </div>
+           </div>
+     </div>
+    </div>
+</div>
     <script src="~/Themes/Web/JS/jquery1-10-1.js"></script>
     <script src="~/Themes/Web/bootstrap/js/bootstrap.min.js"></script>
     @RenderSection("ScriptSection", false)

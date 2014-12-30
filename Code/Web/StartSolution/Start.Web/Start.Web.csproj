@@ -157,7 +157,6 @@
     <Content Include="Themes\Web\bootstrap\js\bootstrap.js" />
     <Content Include="Themes\Web\bootstrap\js\bootstrap.min.js" />
     <Content Include="Themes\Web\bootstrap\js\npm.js" />
-    <Content Include="Themes\Web\CSS\Index.css" />
     <Content Include="Themes\Web\CSS\Web.css" />
     <Content Include="Themes\Web\Icons\demo.css" />
     <Content Include="Themes\Web\Icons\demo.html" />
@@ -171,7 +170,9 @@
     <Content Include="Themes\Web\JS\Index.js" />
     <Content Include="Themes\Web\JS\jquery-1.7.1.min.js" />
     <Content Include="Themes\Web\JS\jquery1-10-1.js" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
@@ -194,7 +195,7 @@
     <Content Include="Themes\Web\bootstrap\css\bootstrap.css.map" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Views\Web\Emails.cshtml" />
+    <Content Include="Views\Web\SendEmail.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Shared\_LayoutWeb.cshtml" />
@@ -242,9 +243,7 @@
     <Content Include="Views\Web\Email.cshtml" />
   </ItemGroup>
   <ItemGroup>
-<<<<<<< HEAD
     <Content Include="Views\Web\Phone.cshtml" />
-=======
     <Content Include="Views\Admin\UsersList.cshtml" />
   </ItemGroup>
   <ItemGroup>
@@ -291,7 +290,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Admin\HelpList.cshtml" />
->>>>>>> origin/master
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

@@ -1039,7 +1039,7 @@ h2,
 h3,
 .h3 {
   margin-top: 20px;
-  margin-bottom: 10px;
+  margin-bottom: 30px;
 }
 h1 small,
 .h1 small,
@@ -4908,7 +4908,7 @@ a.thumbnail.active {
 .list-group-item {
   position: relative;
   display: block;
-  padding: 10px 30px;
+  
   margin-bottom: -1px;
   background-color: #fff;
   border: 1px solid #ddd;
