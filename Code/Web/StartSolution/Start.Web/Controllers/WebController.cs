@@ -23,5 +23,13 @@ namespace Start.Web.Controllers
         {
             return View();
         }
+        public ActionResult Phone()
+        {
+            return View();
+        }
+        public ActionResult SendEmail()
+        {
+            return View();
+        }
     }
 }

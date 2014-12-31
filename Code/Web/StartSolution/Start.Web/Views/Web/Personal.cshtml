@@ -1,61 +1,63 @@
 ﻿    <div class="row-fluid">                   
             <div class="Email-content">
                 <ol class="breadcrumb">
-                    <li><a href="#" class="iconfont">&#xe6d9;</a></li>
+                    <li><a href="/Web/Index" class="iconfont">&#xe6d9;</a></li>
                     <li><a href="#" class="iconfont">&#xf0053;</a></li>
                     <li class="active">Data</li>
                 </ol>
-                <div class="personal-nav">
-               <ul class="list-group">
-                    <li class="list-group-item Personal-active">个人设置<span class="iconfont">&#xe6ab;</span></li>
-                    <li class="list-group-item">邮件设置<span class="iconfont">&#xe6ab;</span></li>
-                    <li class="list-group-item">邮件群发<span class="iconfont">&#xe6ab;</span></li>
-                    <li class="list-group-item">信息设置<span class="iconfont">&#xe6ab;</span></li>
-                    <li class="list-group-item">信息群发<span class="iconfont">&#xe6ab;</span></li>
-                    <li class="list-group-item">关于我们<span class="iconfont">&#xe6ab;</span></li>
-                    <li class="list-group-item">联系我们<span class="iconfont">&#xe6ab;</span></li>
-                    <li class="list-group-item">意见反馈<span class="iconfont">&#xe6ab;</span></li>
-                    <li class="list-group-item">修改密码<span class="iconfont">&#xe6ab;</span></li>
+               <div class="personal-nav">
+                <ul class="list-group">
+                    <li class="list-group-item Personal-active"><a href="#" class="nav-a">个人设置<span class="iconfont">&#xe609;</span></a></li>
+                    <li class="list-group-item"><a href="#" class="nav-a">修改密码<span class="iconfont">&#xe609;</span></a></li>
+                    <li class="list-group-item"><a href="/Web/SendEmail" class="nav-a">邮件群发<span class="iconfont">&#xe609;</span></a></li>
+                    <li class="list-group-item"><a href="#" class="nav-a">邮件设置<span class="iconfont">&#xe609;</span></a></li>
+                    <li class="list-group-item"><a href="#" class="nav-a">已发邮件<span class="iconfont">&#xe609;</span></a></li>
+                    <li class="list-group-item"><a href="#" class="nav-a">信息群发<span class="iconfont">&#xe609;</span></a></li>
+                    <li class="list-group-item"><a href="#" class="nav-a">信息设置<span class="iconfont">&#xe609;</span></a></li>
+                    <li class="list-group-item"><a href="#" class="nav-a">已发信息<span class="iconfont">&#xe609;</span></a></li>                    
                 </ul>
-              </div>  
-               
-                <div class="tab-div">
-                     <div class="tab-index">
-                       <h2 style="text-align:center;">用户资料</h2>
-                      <span class="span-margin">头像</span><img src="#" class="tab-image" /><input type="file"  style="margin-left:150px; display:inline; position:relative;"/><br />
-                      <span class="span-margin">昵称</span><span class="iconfont account">&#xe67a;|</span><input type="text" name="email" class="personal-input" placeholder="请输入昵称"><br />
-                      <span class="span-margin">Q&nbsp;Q</span><span class="iconfont account" style=" margin-left:2px;">&#xe60d;|</span><input type="password" name="password" class="personal-input" placeholder="请输入QQ"><br />
-                      <span class="span-margin">邮箱</span><span class="iconfont account">&#xe60d;|</span><input type="password" name="password" class="personal-input" placeholder="请输入邮箱"><br />
-                      <span class="span-margin">手机</span><span class="iconfont account">&#xe638;|</span><input type="text" name="email" class="personal-input" placeholder="请输入手机号"><br />
+              </div>               
+               <div class="tab-div">
+                   <div class="tab-index">
+                      <h2 style="text-align:center;">用户资料</h2>
+                      <span class="span-margin">昵称</span><span class="iconfont account">&#xe67a;|</span><input type="text" name="text" class="personal-input" placeholder="请输入昵称">
+                      <div class="Occupying"><p class="Modal-errorPrompt error-account iconfont">&#xf0003;昵称已存在</p></div>
+                      <span class="span-margin">Q&nbsp;Q</span><span class="iconfont account" style=" margin-left:2px;">&#xe60d;|</span><input type="text" name="QQ" class="personal-input" placeholder="请输入QQ">
+                      <div class="Occupying"><p class="Modal-errorPrompt error-account iconfont" id="QQ-error">&#xf0003;QQ格式不正确</p></div>
+                      <span class="span-margin">邮箱</span><span class="iconfont account">&#xe60d;|</span><input type="text" name="email" class="personal-input" placeholder="请输入邮箱">
+                     <div class="Occupying"><p class="Modal-errorPrompt error-account iconfont" id="Email-error">&#xf0003;邮件格式错误</p></div>
+                      <span class="span-margin">手机</span><span class="iconfont account">&#xe638;|</span><input type="text" name="phone" class="personal-input" placeholder="请输入手机号">
+                    <div class="Occupying" ><p class="Modal-errorPrompt error-account iconfont" id="phone-error">&#xf0003;手机号格式错误</p></div>
                       <span class="span-margin">性别</span><input type="radio" id="men" name="sex"/><label for="men">男</label>  <input type="radio" id="weimen" name="sex"/><label for="weimen">女</label><br />
-                      <span class="span-margin" style="position:relative; top:-95px;">个性签名</span><textarea id="aboutme" class="textarea rlf-field-error" cols="38" name="aboutme" rows="5"></textarea> 
+                      <span class="span-margin" style="position:relative; top:-95px; display: inline-block">个性签名</span><textarea id="aboutme" class="textarea rlf-field-error"  name="aboutme" style="width:267px; height:110px;" ></textarea> 
                       <button type="button" class="btn btn-success  modal-btn" data-dismiss="modal" style="margin-left:90px;margin-top:15px;">保存</button>
                 </div>
-                 <div class="tab-index displayNone">邮件设置</div>
-                 <div class="tab-index displayNone">邮件群发</div>
-                 <div class="tab-index displayNone">信息设置</div>
-                 <div class="tab-index displayNone">信息群发</div>
-                 <div class="tab-index displayNone">关于我们</div>
-                 <div class="tab-index displayNone">联系我们</div>
-                 <div class="tab-index displayNone">
-                  <h2>意见反馈</h2>
-                 <p>您的意见，我们会以最快的速度解决.....</p>
-                 <textarea name="textarea" cols="100" rows="10" wrap="soft" placeholder="请您的意见信息......" ></textarea><br />
-                <button type="button" class="btn btn-success  modal-btn" >发送</button>
-                 </div>
-                 <div class="tab-index displayNone">修改密码</div>
-               </div>      
-             <br style="clear:both;" />          
-            </div>
-   
-
-
-
-
+                   <div class="tab-index displayNone">
+                      <h2 style="text-align:center;">修改密码</h2>
+                      <span class="span-margin">旧密码</span><span class="iconfont account" style=" margin-left:14px;">&#xe60d;|</span><input type="password" name="old-password" class="personal-input" placeholder="请输入旧密码">
+                        <div class="Occupying"><p class="Modal-errorPrompt error-account iconfont">&#xf0003;密码不正确</p></div> 
+                        <span class="span-margin">新密码</span><span class="iconfont account" style=" margin-left:14px;">&#xe60d;|</span><input type="password" name="new-password" class="personal-input" placeholder="请输入新密码">
+                      <div class="Occupying"><p class="Modal-errorPrompt error-account iconfont" id="password-short">&#xf0003;密码太短</p></div> 
+                       <span class="span-margin">重新输入</span><span class="iconfont account">&#xe60d;|</span><input type="password" name="again-password" class="personal-input" placeholder="请再次输入密码">
+                      <div class="Occupying"><p class="Modal-errorPrompt error-account iconfont" id="again">&#xf0003;您两次输入的密码不一致</p></div> 
+                       <button type="button" class="btn btn-success  modal-btn" data-dismiss="modal" style="margin-left:90px;margin-top:15px;">保存</button>
+                    </div>                  
+                   <div class="tab-index displayNone">
+                    <h2 style="text-align:center;">邮件群发</h2>
+                    </div>
+                   <div class="tab-index displayNone">
+                   <h2 style="text-align:center;">邮件设置</h2>
+                   </div>
+                   <div class="tab-index displayNone">已发邮件</div>                  
+                   <div class="tab-index displayNone">信息群发</div>
+                   <div class="tab-index displayNone">信息设置</div>
+                   <div class="tab-index displayNone">已发信息</div>    
+                </div>      
+            </div> 
+        </div>
         <!--row-fluid end-->
     @section ScriptSection
-{
-<script type="text/javascript">
+{<script type="text/javascript">
       //tab切换
     $(function () {
         $(".list-group-item").click(function (index) {
@@ -67,15 +69,58 @@
             $(".tab-index").each(function () {
                 $(this).hide();
             })
-            $(".tab-index").eq(In).show();   
+           $(".tab-index").eq(In).show();   
         })
-
-
-
-
-
-        })
-        
+        //验证邮箱
+        $("input[name='email']").change(function () {
+            //手机号码var reg = /^1(3|5|7|8|9)\d{9}$/;
+            var regs = /^[\w\-\.]+@@[\w\-\.]+(\.\w+)+$/;
+            if ($(this).val() == "" || regs.test($(this).val()) == true) {
+                $("#Email-error").hide();
+                }
+            else {
+                $("#Email-error").show();
+            }
+        });
+        //验证手机号
+        $("input[name='phone']").change(function (){
+            var regs = /^1(3|5|7|8|9)\d{9}$/;
+            if ($(this).val() == ""||regs.test($(this).val()) == true){
+                $("#phone-error").hide();
+            }
+            else {               
+                $("#phone-error").show();
+            }
+        });
+        //判断QQ号
+        $("input[name='QQ']").change(function () {
+            var regs = /^\d{5,10}$/;
+            if ($(this).val() == "" || regs.test($(this).val()) == true) {
+                $("#QQ-error").hide();
+            }
+            else {
+                $("#QQ-error").show();
+            }
+        });
+        //判断密码是否太少
+        $("input[name='new-password']").change(function () {
+           if ($(this).val() == ""|| $(this).val().length>=8) {
+               $("#password-short").hide();
+            }
+            else {
+               $("#password-short").show();
+            }
+        });
+        //判断密码是否一致
+        $("input[name='again-password']").change(function () {
+            if ($("input[name='new-password']").val() == $(this).val()) {
+                $("#again").hide();
+            }
+            else {
+                $("#again").show();
+            }
+        });
+        })        
 </script>
  }
        
